@@ -37,6 +37,9 @@
   line-height: 1.6;
   z-index: 1;
 }
+main {
+  overflow-x: hidden;
+}
 
 h1 {
   font-family: var(--font-title);
