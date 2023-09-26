@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import AliceCarousel from "react-alice-carousel";
 import papa from "papaparse";
-import tache from "../assets/tache.png";
 import griffe from "../assets/griffe.png";
 import zarlor from "../assets/zarlor.jpg";
 import pilon from "../assets/pilon.jpg";
@@ -79,7 +78,6 @@ export default function Home({ helmet }) {
       </header>
 
       <section className="top">
-        <img src={tache} alt="tache de sang" className="tache" />
         <h1>Make Me Scream</h1>
         <h2 className="bebas_h2">KIKI BALL 2023</h2>
         <div>
