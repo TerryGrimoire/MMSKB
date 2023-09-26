@@ -274,6 +274,7 @@ section {
   text-align: left;
   color: var(--third-color);
   margin-bottom: 60px;
+  padding: 10px;
 }
 
 .categories h3, .categories h4  {
