@@ -1,6 +1,6 @@
 /********************************************************************* CSS VARIABLES *********************************************************************/ 
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Mukta:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @font-face {
   font-family: beast;
   src: url("/beast.ttf");
@@ -31,10 +31,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: var(--main-bg-color);
   font-family: var(--font-text);
   color: var(--secondary-bg-color);
   overflow-x: hidden;
+  line-height: 1.6;
+  z-index: 1;
 }
 
 h1 {
@@ -43,6 +44,9 @@ h1 {
   text-align: center;
   color: var(--third-color);
   letter-spacing: 4px;
+  padding: 0 10px;
+  line-height: 1.3;
+  margin-bottom: 10px;
 }
 
 a {
@@ -110,10 +114,11 @@ section {
 
 .button_style {
   border: none;
-  box-shadow: var(--box-shadow);
-  padding: 1rem;
-  border-radius: 0.75rem;
+  padding: 0.5rem;
   font-weight: bold;
+  background-color: var(--secondary-bg-color);
+  color: var(--main-bg-color);
+  font-family: var(--font-bebas);
 }
 
 .margin1r0 {
@@ -129,6 +134,9 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--main-bg-color);
+  margin: 0;
+  border: none;
 }
 
 
@@ -142,11 +150,12 @@ section {
 .zarlor {
   margin-right: -10px;
 }
-/********************************************************************* HOME *********************************************************************/ 
-.main_container {
-  padding: 1rem 3rem;
-}
 
+/********************************************************************* HOME *********************************************************************/ 
+
+.home {
+  background-color: var(--main-bg-color);
+}
 .tache {
   position :absolute;
   width: 40%;
@@ -159,21 +168,131 @@ section {
 .top h2 {
   font-weight: 100;
   text-align: center;
-  margin: 20px;
+  margin: 0px auto 40px;
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
 }
 
+.top a {
+  margin-top: 50px;
+}
+
+.top div {
+  text-align: center;
+}
+.griffe {
+  height: 200px;
+  width: auto;
+  object-fit: contain;
+  position: absolute;
+  background-color: transparent;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+
+}
 .duo {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
-  margin-bottom: 100vh;
+  margin: 4rem 0 0;
 }
 
 .duo * {
-  width: 50%;
+  width: 100%;
 }
 
+.duo article {
+  padding: 30px 10px;
+}
+
+.duo article h3 {
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.duo article p {
+  margin-bottom: 15px;
+}
+
+.lieux {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2rem 0;
+  margin: 0;
+  width: 100vw;
+}
+
+.lieux iframe {
+  margin: 2rem 0;
+  width: 100vw;
+  min-height: 50vh;
+}
+
+.lieux article {
+  padding: 10px;
+}
+
+.categories, .categories * {
+  overflow: visible;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 160px 0;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: space-between;
+}
+
+.categories h2 {
+  text-align: left;
+  color: var(--third-color);
+  margin-bottom: 60px;
+}
+
+.categories h3, .categories h4  {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.categories h3 {
+  font-family: var(--font-title);
+  font-size: 3rem;
+  font-weight: 100;
+  letter-spacing: 4px;
+}
+.categories h4 {
+  font-family: var(--font-bebas) ;
+  font-size: 1rem;
+  font-weight: 100;
+  letter-spacing: 4px;
+}
+
+.categories iframe {
+  width: 100vw;
+  min-height: 50vh;
+  margin: 40px 0;
+}
+.categories p {
+  margin: 10px 15px;
+}
 /********************************************************************* Page 1 *********************************************************************/ 
 
 
