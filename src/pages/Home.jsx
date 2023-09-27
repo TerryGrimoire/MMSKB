@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import AliceCarousel from "react-alice-carousel";
 import papa from "papaparse";
 import Reponse from "../components/Reponse";
 import griffe from "../assets/griffe.png";
@@ -76,19 +75,6 @@ export default function Home({ helmet }) {
       .then((data) => prepareData(data.data));
   }, []);
 
-  const items = categories.map((el) => (
-    <div key={el.id} onDragStart={handleDragStart} className="category">
-      <h3>
-        {el.id}. {el.categorie}
-      </h3>
-      <h4>{el.theme}</h4>
-      <iframe src={el.iframe} frameBorder="0" title={el.categorie} />
-      {el.description.split(";").map((elo) => (
-        <p>{elo}</p>
-      ))}
-    </div>
-  ));
-
   return (
     <main className="flex-col home">
       <Helmet>
@@ -135,30 +121,21 @@ export default function Home({ helmet }) {
 
       <section className="categories">
         <h2>LES CATÉGORIES</h2>
-        <div className="desktop">
-          <AliceCarousel
-            mouseTracking
-            items={items}
-            infinite
-            disableButtonsControls
-            autoPlay
-            autoPlayInterval={7000}
-          />
-        </div>
+
         {categories.map((el) => (
-          <div
-            key={el.id}
-            onDragStart={handleDragStart}
-            className="category mobile"
-          >
+          <div key={el.id} onDragStart={handleDragStart} className="category">
             <h3>
               {el.id}. {el.categorie}
             </h3>
             <h4>{el.theme}</h4>
-            <iframe src={el.iframe} frameBorder="0" title={el.categorie} />
-            {el.description.split(";").map((elo) => (
-              <p>{elo}</p>
-            ))}
+            <div className="duok">
+              <iframe src={el.iframe} frameBorder="0" title={el.categorie} />
+              <article>
+                {el.description.split(";").map((elo) => (
+                  <p>{elo}</p>
+                ))}
+              </article>
+            </div>
           </div>
         ))}
       </section>

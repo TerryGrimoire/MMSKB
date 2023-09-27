@@ -402,6 +402,11 @@ footer a {
 /********************************************************************* MENTIONS *********************************************************************/ 
 .mentions-container {
   padding: 1rem 4rem;
+  background-color: var(--main-bg-color);
+}
+
+.mentions-container a {
+  color: var(--third-color);
 }
 
 .mentions-container > * {
@@ -428,6 +433,49 @@ footer a {
     display: initial;
   }
 
+/********************************************************************* HOME *********************************************************************/ 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.category, .lieux, .faq {
+  max-width: 1200px;
+}
+
+.faq {
+  width: 100%;
+}
+
+.faq p:last-of-type {
+  margin-bottom: 60px;
+}
+
+.category .duok {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+}
+
+.categories .category:nth-of-type(2n) .duok {
+  flex-direction: row-reverse;
+  text-align: left;
+}
+
+.categories .duok > * {
+  width: 50%;
+}
+
+.categories .duok article {
+  padding: 20px;
+}
+
+.category iframe {min-height: 70vh;}
+.category p {
+  margin-bottom: 20px;
+}
 /********************************************************************* NAVBAR *********************************************************************/ 
 .navbar {
   padding: 2rem 0;
