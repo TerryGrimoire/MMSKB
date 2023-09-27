@@ -16,7 +16,14 @@
   --secondary-bg-color : white ;
   --third-color : #FF1616;
   --button-color: #0055FF;
-  --box-shadow: #e1e1e1 0px 1px 0px, #e1e1e1 0px 4px 16px, #e1e1e1 0px 8px 16px;
+  --box-shadow: inset 0 0 0.5px 1px hsla(0, 0%,  
+  100%, 0.075),
+  /* shadow ring 👇 */
+  0 0 0 1px hsla(0, 0%, 0%, 0.05),
+  /* multiple soft shadows 👇 */
+  0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
+  0 0.9px 1.5px hsla(0, 0%, 0%, 0.045),
+  0 3.5px 6px hsla(0, 0%, 0%, 0.09);
   --font-title : beast, sans-serif;
   --font-text :glace, sans-serif;
   --font-bebas :  'Bebas Neue', cursive;
@@ -287,6 +294,7 @@ section {
 
 .categories h2, .lieux h2, .faq h2 {
   text-align: center;
+  width: 100%;
   color: var(--third-color);
   margin-bottom: 30px;
   padding: 10px;
@@ -440,8 +448,17 @@ main {
   align-items: center;
   justify-content: center;
 }
-.category, .lieux, .faq {
-  max-width: 1200px;
+
+h1 {
+  font-size: 10rem;
+}
+.top p {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+.category, .faq {
+  max-width: 1000px;
 }
 
 .faq {
@@ -451,6 +468,8 @@ main {
 .faq p:last-of-type {
   margin-bottom: 60px;
 }
+
+
 
 .category .duok {
   display: flex;
@@ -469,13 +488,41 @@ main {
 }
 
 .categories .duok article {
-  padding: 20px;
+  padding: 0 50px;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--third-color);
 }
 
 .category iframe {min-height: 70vh;}
 .category p {
   margin-bottom: 20px;
 }
+
+.lieux .duo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+
+.lieux .duo > * {
+  width: 50%;
+  min-height: 60vh;
+}
+
+.lieux .duo article {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--third-color);
+}
+
 /********************************************************************* NAVBAR *********************************************************************/ 
 .navbar {
   padding: 2rem 0;

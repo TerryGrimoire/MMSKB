@@ -140,8 +140,8 @@ export default function Home({ helmet }) {
         ))}
       </section>
       <section className="lieux">
+        <h2>comment s'y rendre</h2>
         <div className="duo">
-          <h2>comment s'y rendre</h2>
           <article>
             <h3>L'OUTSIDE </h3>
             <div className="details_container">
