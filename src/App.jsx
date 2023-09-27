@@ -9,7 +9,7 @@ import "./App.css";
 
 function App() {
   const helmet = {
-    title: "Change Title",
+    title: "Make Me Scream Kiki Ball",
     href: "https://changehref.com",
     description: "Change description",
   };

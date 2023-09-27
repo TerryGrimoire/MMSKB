@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import AliceCarousel from "react-alice-carousel";
 import papa from "papaparse";
@@ -134,14 +135,32 @@ export default function Home({ helmet }) {
 
       <section className="categories">
         <h2>LES CATÉGORIES</h2>
-        <AliceCarousel
-          mouseTracking
-          items={items}
-          infinite
-          disableButtonsControls
-          autoPlay
-          autoPlayInterval={7000}
-        />
+        <div className="desktop">
+          <AliceCarousel
+            mouseTracking
+            items={items}
+            infinite
+            disableButtonsControls
+            autoPlay
+            autoPlayInterval={7000}
+          />
+        </div>
+        {categories.map((el) => (
+          <div
+            key={el.id}
+            onDragStart={handleDragStart}
+            className="category mobile"
+          >
+            <h3>
+              {el.id}. {el.categorie}
+            </h3>
+            <h4>{el.theme}</h4>
+            <iframe src={el.iframe} frameBorder="0" title={el.categorie} />
+            {el.description.split(";").map((elo) => (
+              <p>{elo}</p>
+            ))}
+          </div>
+        ))}
       </section>
       <section className="lieux">
         <div className="duo">
@@ -179,6 +198,20 @@ export default function Home({ helmet }) {
           <Reponse el={el} />
         ))}
       </section>
+      <footer>
+        <p>
+          Designé et développé par le{" "}
+          <a
+            href="https://grimoire-numerique.re"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Grimoire Numérique
+          </a>
+        </p>
+        <p>Tous droits réservés 2023</p>
+        <Link to="/Mentions">Mentions légales</Link>
+      </footer>
     </main>
   );
 }
