@@ -10,8 +10,9 @@ import "./App.css";
 function App() {
   const helmet = {
     title: "Make Me Scream Kiki Ball",
-    href: "https://changehref.com",
-    description: "Change description",
+    href: "https://makemescreamkikiball.grimoire.re/",
+    description:
+      "Retrouver toute la ballroom scene de la Réunion pour le ball d'Halloween. Par la communauté LGBTQIA+ pour la communauté kwir de la Réunion.",
   };
   return (
     <BrowserRouter>
