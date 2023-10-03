@@ -9,6 +9,7 @@ import pilon from "../assets/pilon.jpg";
 import bal from "../assets/bal.png";
 import loc from "../assets/loc.png";
 import hor from "../assets/hor.png";
+import nuit from "../assets/nuit.png";
 
 import "react-alice-carousel/lib/alice-carousel.css";
 
@@ -103,12 +104,12 @@ export default function Home({ helmet }) {
         <div>
           <p>
             Pour fêter Halloween dignement les houses Zarlor et Pilon vous
-            convient à un Kiki Ball Le samedi 28 octobre 2023 à partir de 20h à
+            invitent à un KIKI BAL le mardi 31 octobre 2023 à partir de 19h30 à
             l'Outside, Saint-Gilles
           </p>
         </div>
         <a
-          href="https://drive.google.com/file/d/1nweJiBKvI4g9Iq6UF6sonPXEciNGMpcS/view?usp=sharing"
+          href="https://drive.google.com/file/d/1dxR2opYV6Ww-Ay_preHDrXyYiA4YZw6G/view"
           target="_blank"
           rel="noreferrer"
         >
@@ -151,11 +152,19 @@ export default function Home({ helmet }) {
               </div>
               <div>
                 <img src={hor} alt="horloge icone" />
-                <p>Début du ball à 20h</p>
+                <p>Début du ball à 19h30</p>
               </div>
               <div>
                 <img src={bal} alt="ballon icone" />
                 <p>After jusqu'à 05h du matin</p>
+              </div>
+              <div>
+                <img src={nuit} alt="lune avec symboles pour dormir" />
+                <p>
+                  Si vous comptez boire ou si vous venez en bus, <br /> nous
+                  avons une équipe qui va camper sur place sur la plage des
+                  Brisants
+                </p>
               </div>
             </div>
           </article>
