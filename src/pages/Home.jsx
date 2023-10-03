@@ -104,7 +104,7 @@ export default function Home({ helmet }) {
         <div>
           <p>
             Pour fêter Halloween dignement les houses Zarlor et Pilon vous
-            invitent à un KIKI BAL le mardi 31 octobre 2023 à partir de 19h30 à
+            invitent à un KIKI BALL le mardi 31 octobre 2023 à partir de 19h30 à
             l'Outside, Saint-Gilles
           </p>
         </div>
