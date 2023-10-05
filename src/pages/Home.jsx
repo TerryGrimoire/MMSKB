@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import papa from "papaparse";
+import partenaires from "../data/partenaires";
 import Reponse from "../components/Reponse";
 import couvert from "../assets/couvert.png";
 import zarlor from "../assets/zarlor.jpg";
@@ -199,6 +200,16 @@ export default function Home({ helmet }) {
         {faq.map((el) => (
           <Reponse el={el} />
         ))}
+      </section>
+      <section className="partenaires white">
+        <h2>Découvrez nos partenaires</h2>
+        <div>
+          {partenaires.map((el) => (
+            <a href={el.link} target="_blank" rel="noreferrer">
+              <img src={el.src} alt={el.alt} />
+            </a>
+          ))}
+        </div>
       </section>
       <footer>
         <p>

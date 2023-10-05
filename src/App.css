@@ -295,7 +295,7 @@ section {
   margin: 20px 0 40px;
 }
 
-.categories h2, .lieux h2, .faq h2 {
+.categories h2, .lieux h2, .faq h2, .partenaires h2 {
   text-align: center;
   width: 100%;
   color: var(--third-color);
@@ -452,6 +452,25 @@ footer {
   text-align: center;
 }
 
+.partenaires {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.partenaires div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.partenaires img {
+  width: 47vw;
+  margin: 0.5vw 1vw 0;
+  background-color: var(--secondary-bg-color);
+}
 /******************************************************************************************************************************************/ 
 /********************************************************************* DESKTIOP *********************************************************************/ 
 /******************************************************************************************************************************************/ 
@@ -467,7 +486,11 @@ footer {
     color: var(--secondary-bg-color);
     text-decoration: underline;
   }
-
+  .partenaires img {
+    width: 8vw;
+    margin: 10px;
+    background-color: var(--secondary-bg-color);
+  }
   .button_style {
     border: none;
     padding: 0.5rem;
