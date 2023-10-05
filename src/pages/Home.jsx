@@ -3,10 +3,9 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import papa from "papaparse";
 import Reponse from "../components/Reponse";
-import griffe from "../assets/griffe.png";
+import couvert from "../assets/couvert.png";
 import zarlor from "../assets/zarlor.jpg";
 import pilon from "../assets/pilon.jpg";
-import bal from "../assets/bal.png";
 import loc from "../assets/loc.png";
 import hor from "../assets/hor.png";
 import nuit from "../assets/nuit.png";
@@ -108,16 +107,26 @@ export default function Home({ helmet }) {
             l'Outside, Saint-Gilles
           </p>
         </div>
-        <a
-          href="https://drive.google.com/file/d/1dxR2opYV6Ww-Ay_preHDrXyYiA4YZw6G/view"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button type="button" className="button_style">
-            Télécharger les catégories
-          </button>
-        </a>
-        <img src={griffe} alt="griffe" className="griffe" />
+        <div className="buttons_container">
+          <a
+            href="https://drive.google.com/file/d/1dxR2opYV6Ww-Ay_preHDrXyYiA4YZw6G/view"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button type="button" className="button_style">
+              Télécharger les catégories
+            </button>
+          </a>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeeDYtEkTUxNbS0rsP4iB330BnRKtx6rQ2TGJavxv2OLMeOoA/viewform?usp=sf_link "
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button type="button" className="button_style red">
+              S'inscrire au kiki ball
+            </button>
+          </a>
+        </div>
       </section>
 
       <section className="categories">
@@ -152,11 +161,18 @@ export default function Home({ helmet }) {
               </div>
               <div>
                 <img src={hor} alt="horloge icone" />
-                <p>Début du ball à 19h30</p>
+                <p>
+                  Début du ball à 19h30
+                  <br />
+                  After jusqu'à 05h du matin
+                </p>
               </div>
               <div>
-                <img src={bal} alt="ballon icone" />
-                <p>After jusqu'à 05h du matin</p>
+                <img src={couvert} alt="fourchette et couteau icone" />
+                <p>
+                  Un menu spécial Halloween sera proposé sur réservation par
+                  l'Outside
+                </p>
               </div>
               <div>
                 <img src={nuit} alt="lune avec symboles pour dormir" />
