@@ -110,7 +110,7 @@ export default function Home({ helmet }) {
         </div>
         <div className="buttons_container">
           <a
-            href="https://drive.google.com/file/d/1dxR2opYV6Ww-Ay_preHDrXyYiA4YZw6G/view"
+            href="https://drive.google.com/file/d/1QjBYriJQy3bcapIqatneCWiBgXZXne8m/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
           >
