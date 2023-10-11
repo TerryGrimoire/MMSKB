@@ -6,6 +6,7 @@ import gn from "../assets/logo.png";
 import gootsa from "../assets/gootsa.png";
 import patissieres from "../assets/patissieres.png";
 import villa from "../assets/villa.png";
+import MP from "../assets/MP.jpg";
 
 const partenaires = [
   {
@@ -43,6 +44,12 @@ const partenaires = [
     src: villa,
     alt: "La villa Club",
     link: "https://www.lavilla-club.com/",
+  },
+  {
+    id: 6,
+    src: MP,
+    alt: "Maýlëfeek Pearl",
+    link: "https://www.facebook.com/DorineTrpt",
   },
 ];
 
