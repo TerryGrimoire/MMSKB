@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
-import Tarifs from "./pages/Tarifs";
+import Covoiturage from "./pages/Covoiturage";
 import Contact from "./pages/Contact";
 import Mentions from "./pages/Mentions";
 
@@ -19,7 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home helmet={helmet} />} />
         <Route path="/Services" element={<Services helmet={helmet} />} />
-        <Route path="/Tarifs" element={<Tarifs helmet={helmet} />} />
+        <Route path="/Covoiturage" element={<Covoiturage helmet={helmet} />} />
         <Route path="/Contact" element={<Contact helmet={helmet} />} />
         <Route path="/Mentions" element={<Mentions />} />
       </Routes>

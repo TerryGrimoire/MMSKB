@@ -152,6 +152,18 @@ export default function Home({ helmet }) {
       </section>
       <section className="lieux">
         <h2>comment s'y rendre</h2>
+        <div className="lieux_covoit">
+          <p>
+            Vous avez besoin d'un covoiturage ou vous avez des places de libre
+            dans votre voiture ? Faites-le nous savoir
+          </p>
+
+          <Link to="/Covoiturage">
+            <button type="button" className="button_style">
+              Découvrir le covoiturage du ball
+            </button>
+          </Link>
+        </div>
         <div className="duo">
           <article>
             <h3>L'OUTSIDE </h3>
