@@ -7,6 +7,8 @@ import gootsa from "../assets/gootsa.png";
 import patissieres from "../assets/patissieres.png";
 import villa from "../assets/villa.png";
 import MP from "../assets/MP.jpg";
+import AP from "../assets/AP.png";
+import hypno from "../assets/hypno.png";
 
 const partenaires = [
   {
@@ -50,6 +52,18 @@ const partenaires = [
     src: MP,
     alt: "Maýlëfeek Pearl",
     link: "https://www.facebook.com/DorineTrpt",
+  },
+  {
+    id: 7,
+    src: AP,
+    alt: "Apéro Queer",
+    link: "https://www.facebook.com/profile.php?id=100087489153874",
+  },
+  {
+    id: 8,
+    src: hypno,
+    alt: "Thierry Grondin, Psychopraticien, Hypnotherapeute",
+    link: "https://www.thierry-grondin-hypnotherapeute-974.fr/",
   },
 ];
 
