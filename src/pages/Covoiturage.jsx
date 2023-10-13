@@ -124,7 +124,7 @@ function Covoiturage({ helmet }) {
                     Départ prévu à {el.heure}
                   </p>
                   <p>{el.commentaire}</p>
-                  <a href={el.contact}>
+                  <a href={el.contact} target="_blank" rel="noreferrer">
                     <button type="button" className="button_style">
                       contacter cette personne
                     </button>
@@ -137,7 +137,11 @@ function Covoiturage({ helmet }) {
                 Je n'ai pas de transport et je cherche quelqu'un avec qui me
                 rendre au ball
               </p>
-              <a href="https://docs.google.com/spreadsheets/d/1WVklw9CGHF4LLVICK9aEDYCu3R4j9kWBBi4wMcplTIo/edit?usp=sharing">
+              <a
+                href="https://docs.google.com/spreadsheets/d/1WVklw9CGHF4LLVICK9aEDYCu3R4j9kWBBi4wMcplTIo/edit?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <button type="button" className="button_style">
                   Ajouter une demande de covoiturage
                 </button>
@@ -161,7 +165,7 @@ function Covoiturage({ helmet }) {
                     </span>
                   </h3>
                   <p>{el.commentaire}</p>
-                  <a href={el.contact}>
+                  <a href={el.contact} target="_blank" rel="noreferrer">
                     <button type="button" className="button_style">
                       contacter cette personne
                     </button>
@@ -174,7 +178,11 @@ function Covoiturage({ helmet }) {
                 J'ai de la place dans ma voiture et je souhaite proposer du
                 covoiturage
               </p>
-              <a href="https://docs.google.com/spreadsheets/d/1Eqv34ldqH-71EDEieAUSc3CeneOLzFiYvtI5D2b_K1o/edit?usp=sharing">
+              <a
+                href="https://docs.google.com/spreadsheets/d/1Eqv34ldqH-71EDEieAUSc3CeneOLzFiYvtI5D2b_K1o/edit?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <button type="button" className="button_style">
                   Ajouter mon trajet
                 </button>
