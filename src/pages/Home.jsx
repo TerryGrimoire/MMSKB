@@ -4,6 +4,8 @@ import { Helmet } from "react-helmet";
 import papa from "papaparse";
 import partenaires from "../data/partenaires";
 import Reponse from "../components/Reponse";
+import jury from "../data/jury";
+
 import couvert from "../assets/couvert.png";
 import zarlor from "../assets/zarlor.jpg";
 import pilon from "../assets/pilon.jpg";
@@ -127,6 +129,17 @@ export default function Home({ helmet }) {
               S'inscrire au kiki ball
             </button>
           </a>
+        </div>
+      </section>
+      <section className="jury_container">
+        <h2>Découvrer notre jury</h2>
+        <div className="jurys">
+          {jury.map((el) => (
+            <div className="jury">
+              <img src={el.src} alt={el.nom} /> <h3>{el.nom}</h3>
+              <p>{el.description}</p>
+            </div>
+          ))}
         </div>
       </section>
 
