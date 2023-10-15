@@ -9,6 +9,7 @@ import villa from "../assets/villa.png";
 import MP from "../assets/MP.jpg";
 import AP from "../assets/AP.png";
 import hypno from "../assets/hypno.png";
+import cici from "../assets/cici.png";
 
 const partenaires = [
   {
@@ -64,6 +65,12 @@ const partenaires = [
     src: hypno,
     alt: "Thierry Grondin, Psychopraticien, Hypnotherapeute",
     link: "https://www.thierry-grondin-hypnotherapeute-974.fr/",
+  },
+  {
+    id: 9,
+    src: cici,
+    alt: "Nails by Cici",
+    link: "https://www.instagram.com/nail_s_by_cici/",
   },
 ];
 

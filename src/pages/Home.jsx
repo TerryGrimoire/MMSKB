@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import papa from "papaparse";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
+
 import partenaires from "../data/partenaires";
 import Reponse from "../components/Reponse";
 import jury from "../data/jury";
@@ -12,10 +15,6 @@ import pilon from "../assets/pilon.jpg";
 import loc from "../assets/loc.png";
 import hor from "../assets/hor.png";
 import nuit from "../assets/nuit.png";
-
-import "react-alice-carousel/lib/alice-carousel.css";
-
-const handleDragStart = (e) => e.preventDefault();
 
 export default function Home({ helmet }) {
   useEffect(() => {
@@ -78,6 +77,8 @@ export default function Home({ helmet }) {
       .then((data) => prepareData(data.data));
   }, []);
 
+  const handleDragStart = (e) => e.preventDefault();
+
   return (
     <main className="flex-col home">
       <Helmet>
@@ -131,17 +132,6 @@ export default function Home({ helmet }) {
           </a>
         </div>
       </section>
-      <section className="jury_container">
-        <h2>Découvrer notre jury</h2>
-        <div className="jurys">
-          {jury.map((el) => (
-            <div className="jury">
-              <img src={el.src} alt={el.nom} /> <h3>{el.nom}</h3>
-              <p>{el.description}</p>
-            </div>
-          ))}
-        </div>
-      </section>
 
       <section className="categories">
         <h2>LES CATÉGORIES</h2>
@@ -162,6 +152,36 @@ export default function Home({ helmet }) {
             </div>
           </div>
         ))}
+      </section>
+      <section className="jury_container">
+        <h2>Découvrer notre jury</h2>
+        <div className="jurys mobile">
+          <AliceCarousel
+            mouseTracking
+            infinite
+            items={jury.map((el) => (
+              <div className="jury">
+                <h3>{el.nom}</h3>
+                <img
+                  src={el.src}
+                  alt={el.nom}
+                  onDragStart={handleDragStart}
+                />{" "}
+                <p>{el.description}</p>
+              </div>
+            ))}
+          />
+        </div>
+        <div className="jurys desktop">
+          {jury.map((el) => (
+            <div className="jury">
+              <h3>{el.nom}</h3>
+              <img src={el.src} alt={el.nom} />
+
+              <p>{el.description}</p>
+            </div>
+          ))}
+        </div>
       </section>
       <section className="lieux">
         <h2>comment s'y rendre</h2>
@@ -219,13 +239,7 @@ export default function Home({ helmet }) {
           />
         </div>
       </section>
-      <section className="faq">
-        <h2>Foire aux questions</h2>
 
-        {faq.map((el) => (
-          <Reponse el={el} />
-        ))}
-      </section>
       <section className="partenaires white">
         <h2>Découvrez nos partenaires</h2>
         <div>
@@ -235,6 +249,13 @@ export default function Home({ helmet }) {
             </a>
           ))}
         </div>
+      </section>
+      <section className="faq">
+        <h2>Foire aux questions</h2>
+
+        {faq.map((el) => (
+          <Reponse el={el} />
+        ))}
       </section>
       <footer>
         <p>
