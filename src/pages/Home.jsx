@@ -154,11 +154,12 @@ export default function Home({ helmet }) {
         ))}
       </section>
       <section className="jury_container">
-        <h2>Découvrer notre jury</h2>
+        <h2>Découvrez notre jury</h2>
         <div className="jurys mobile">
           <AliceCarousel
             mouseTracking
             infinite
+            disableDotsControls
             items={jury.map((el) => (
               <div className="jury">
                 <h3>{el.nom}</h3>
