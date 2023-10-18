@@ -12,6 +12,7 @@ import hypno from "../assets/hypno.png";
 import cici from "../assets/cici.png";
 import marquise from "../assets/marquise.png";
 import IVA from "../assets/IVA.png";
+import dada from "../assets/dada.jpg";
 
 const partenaires = [
   {
@@ -85,6 +86,12 @@ const partenaires = [
     src: IVA,
     alt: "IVA Signature",
     link: "https://ivasignature.fr/",
+  },
+  {
+    id: 12,
+    src: dada,
+    alt: "Dada Burger",
+    link: "https://www.instagram.com/dadaburger_974/",
   },
 ];
 

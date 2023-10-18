@@ -22,7 +22,7 @@ const jury = [
     nom: "Miss Mamie St Denis 2023",
     src: miss,
     description:
-      "Miss Mamie Saint-Denis 2023 est une icone et une personnalité phare de la ville de Saint-Denis. Elle a participé en tant qu'invitée d'honneur à de nombreux événements et cérémonies importantes de la ville. Elle est à la fois Miss Mamie Saint-Denis 2023 mais également première Dauphine Miss Mamie Réunion 2023. Pendant l'élection, elle a su faire preuve d'un regard aiguisé sur la mode et s'est démarquée grâce à sa personnalité mais aussi grâce à ses talents pour le runway. Sa présence au Make Me Scream Kiki Ball est un honneur pour toute la communauté LGBTQIA+ de la Réunion. Représentante de toutes les mamies de l'île, elle envoie un message fort de tolérance, d'amour et d'unité. Car n'oublions pas que le vivre ensemble passe aussi et surtout par le mélange des communautés et des générations.",
+      "Miss Mamie Saint-Denis 2023 est une icone et une personnalité phare de la ville de Saint-Denis. Elle a participé en tant qu'invitée d'honneur à de nombreux événements et cérémonies importantes de la ville. Elle est à la fois Miss Mamie Saint-Denis 2023 mais également deuxième Dauphine Miss Mamie Réunion 2023. Pendant l'élection, elle a su faire preuve d'un regard aiguisé sur la mode et s'est démarquée grâce à sa personnalité mais aussi grâce à ses talents pour le runway. Sa présence au Make Me Scream Kiki Ball est un honneur pour toute la communauté LGBTQIA+ de la Réunion. Représentante de toutes les mamies de l'île, elle envoie un message fort de tolérance, d'amour et d'unité. Car n'oublions pas que le vivre ensemble passe aussi et surtout par le mélange des communautés et des générations.",
   },
 ];
 
