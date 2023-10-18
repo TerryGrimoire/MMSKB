@@ -10,6 +10,8 @@ import MP from "../assets/MP.jpg";
 import AP from "../assets/AP.png";
 import hypno from "../assets/hypno.png";
 import cici from "../assets/cici.png";
+import marquise from "../assets/marquise.png";
+import IVA from "../assets/IVA.png";
 
 const partenaires = [
   {
@@ -71,6 +73,18 @@ const partenaires = [
     src: cici,
     alt: "Nails by Cici",
     link: "https://www.instagram.com/nail_s_by_cici/",
+  },
+  {
+    id: 10,
+    src: marquise,
+    alt: "La Marquise",
+    link: "https://www.instagram.com/la_marquise_4/",
+  },
+  {
+    id: 11,
+    src: IVA,
+    alt: "IVA Signature",
+    link: "https://ivasignature.fr/",
   },
 ];
 
