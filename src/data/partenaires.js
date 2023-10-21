@@ -13,6 +13,8 @@ import cici from "../assets/cici.png";
 import marquise from "../assets/marquise.png";
 import IVA from "../assets/IVA.png";
 import dada from "../assets/dada.jpg";
+import bain from "../assets/bain.png";
+import terrasse from "../assets/terrasse.png";
 
 const partenaires = [
   {
@@ -92,6 +94,18 @@ const partenaires = [
     src: dada,
     alt: "Dada Burger",
     link: "https://www.instagram.com/dadaburger_974/",
+  },
+  {
+    id: 13,
+    src: bain,
+    alt: "Tika Nerversmile",
+    link: "https://www.instagram.com/tikaneversmile/",
+  },
+  {
+    id: 14,
+    src: terrasse,
+    alt: "La Terrasse de Bourbon",
+    link: "https://www.instagram.com/laterrassedebourbon/",
   },
 ];
 
