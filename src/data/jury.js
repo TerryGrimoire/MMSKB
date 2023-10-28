@@ -5,10 +5,10 @@ import miss from "../assets/miss.jpg";
 const jury = [
   {
     id: 0,
-    nom: "Nasty",
+    nom: "Precious Labanji",
     src: nasty,
     description:
-      "Moi c’est Nasty plus connu sur le nom de Precious (ex) EBONY je suis rentré dans la ballroom scene il y a une dizaine d’années. J’ai eu la chance d’intriguer l’une des iconique house américaine qui est « The Iconic of Ebony » mes catégories étaient vogue fem et face . Je suis l’un des pionniers qui a amené le voguing sur paris au côté de mother Lasseindra Ninja , mother Stephie gorgeous gucci, Riya Miyake Mugler et Mother Rheeda Owens . J’ai également été mother de la House of ebony parisienne Durant quelques années . Du coup le fait de voir qu’à la réunion ça prend de l’ampleur et que les gens accroche a cette culture c’est vraiment cool ! Je suis content d’assister à l’évolution de la ballroom scène ici ! Pour le Make me scream ball j’attend vraiment que les participants s’amusent. Je veux voir des outfits de malade et des performances déjantées ! MAKE US SCREAM !!!!!!!",
+      "Moi c’est Nasty plus connu sur le nom de Precious Labanji, je suis rentré dans la ballroom scene il y a une dizaine d’années. J’ai eu la chance d’intégrer l’une des iconiques houses américaines qui est « The Iconic of Ebony ». Mes catégories étaient vogue fem et face . Je suis l’un des pionniers qui a amené le voguing sur paris au côté de mother Lasseindra Ninja , mother Stephie gorgeous gucci, Riya Miyake Mugler et Mother Rheeda Owens . J’ai également été mother de la House of ebony parisienne Durant quelques années . Du coup le fait de voir qu’à la réunion ça prend de l’ampleur et que les gens accroche a cette culture c’est vraiment cool ! Je suis content d’assister à l’évolution de la ballroom scène ici ! Pour le Make me scream ball j’attend vraiment que les participants s’amusent. Je veux voir des outfits de malade et des performances déjantées ! MAKE US SCREAM !!!!!!!",
   },
   {
     id: 1,

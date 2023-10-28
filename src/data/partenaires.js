@@ -5,7 +5,7 @@ import ls from "../assets/ls.png";
 import gn from "../assets/logo.png";
 import gootsa from "../assets/gootsa.png";
 import patissieres from "../assets/patissieres.png";
-import villa from "../assets/villa.png";
+import chat from "../assets/chat.png";
 import MP from "../assets/MP.jpg";
 import AP from "../assets/AP.png";
 import hypno from "../assets/hypno.png";
@@ -15,6 +15,7 @@ import IVA from "../assets/IVA.png";
 import dada from "../assets/dada.jpg";
 import bain from "../assets/bain.png";
 import terrasse from "../assets/terrasse.png";
+import coach from "../assets/coach.png";
 
 const partenaires = [
   {
@@ -46,12 +47,6 @@ const partenaires = [
     src: gootsa,
     alt: "Gootsa",
     link: "https://gootsa.re/",
-  },
-  {
-    id: 5,
-    src: villa,
-    alt: "La villa Club",
-    link: "https://www.lavilla-club.com/",
   },
   {
     id: 6,
@@ -106,6 +101,18 @@ const partenaires = [
     src: terrasse,
     alt: "La Terrasse de Bourbon",
     link: "https://www.instagram.com/laterrassedebourbon/",
+  },
+  {
+    id: 5,
+    src: chat,
+    alt: "Le passage du chat blanc",
+    link: "https://www.instagram.com/passageduchatblanc/",
+  },
+  {
+    id: 15,
+    src: coach,
+    alt: "MTFit Coach Sportive",
+    link: "https://www.mtfitcoachsportive.com/",
   },
 ];
 
