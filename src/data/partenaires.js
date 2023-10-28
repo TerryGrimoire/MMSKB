@@ -16,6 +16,7 @@ import dada from "../assets/dada.jpg";
 import bain from "../assets/bain.png";
 import terrasse from "../assets/terrasse.png";
 import coach from "../assets/coach.png";
+import villa from "../assets/villa.png";
 
 const partenaires = [
   {
@@ -47,6 +48,12 @@ const partenaires = [
     src: gootsa,
     alt: "Gootsa",
     link: "https://gootsa.re/",
+  },
+  {
+    id: 5,
+    src: villa,
+    alt: "La Villa Club",
+    link: "https://www.lavilla-club.com/",
   },
   {
     id: 6,
@@ -103,13 +110,13 @@ const partenaires = [
     link: "https://www.instagram.com/laterrassedebourbon/",
   },
   {
-    id: 5,
+    id: 15,
     src: chat,
     alt: "Le passage du chat blanc",
     link: "https://www.instagram.com/passageduchatblanc/",
   },
   {
-    id: 15,
+    id: 16,
     src: coach,
     alt: "MTFit Coach Sportive",
     link: "https://www.mtfitcoachsportive.com/",
