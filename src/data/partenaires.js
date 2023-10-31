@@ -5,7 +5,7 @@ import ls from "../assets/ls.png";
 import gn from "../assets/logo.png";
 import gootsa from "../assets/gootsa.png";
 import patissieres from "../assets/patissieres.png";
-import chat from "../assets/chat.png";
+import chat from "../assets/mahe.png";
 import MP from "../assets/MP.jpg";
 import AP from "../assets/AP.png";
 import hypno from "../assets/hypno.png";
@@ -17,6 +17,7 @@ import bain from "../assets/bain.png";
 import terrasse from "../assets/terrasse.png";
 import coach from "../assets/coach.png";
 import villa from "../assets/villa.png";
+import uni from "../assets/uni.jpg";
 
 const partenaires = [
   {
@@ -112,14 +113,20 @@ const partenaires = [
   {
     id: 15,
     src: chat,
-    alt: "Le passage du chat blanc",
-    link: "https://www.instagram.com/passageduchatblanc/",
+    alt: "Le Mahé",
+    link: "https://www.facebook.com/mahe974",
   },
   {
     id: 16,
     src: coach,
     alt: "MTFit Coach Sportive",
     link: "https://www.mtfitcoachsportive.com/",
+  },
+  {
+    id: 17,
+    src: uni,
+    alt: "Studio Universal",
+    link: "https://www.facebook.com/profile.php?id=100067822712392",
   },
 ];
 
